@@ -1,0 +1,275 @@
+---------------------------------------------------------------
+[ 2018-10-21T13:30:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/makeOrder
+[ info ] app.yipeng.com/index/order/makeOrder [运行时间：0.108439s][吞吐率：9.22req/s] [内存消耗：2,834.79kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1451',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '7ba4dd89-5729-496e-171e-422930fa3d55',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylgFnerWwSQppaYyK',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370871',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'bis_id' => '1',
+  'id_no' => '210323111111111111',
+  'total_amount' => '88.88',
+  'remark' => 'remark',
+  'pro_amount' => '55.55',
+  'telephone' => '13121370872',
+  'transport_fee' => '33.33',
+  'selected_transport_type' => '1',
+  'appid' => 'wx5a32ed6c23d7cc4a',
+  'secret' => '3c6979fb79b9ffec532abefc5930d769',
+)
+[ info ] [ RUN ] app\index\controller\Order->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003411s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.007402s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.009842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.003689s ]
+[ error ] [0]数据表字段不存在:[$telephone][/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Builder.php:107]
+---------------------------------------------------------------
+[ 2018-10-21T13:30:40+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/makeOrder
+[ info ] app.yipeng.com/index/order/makeOrder [运行时间：0.083885s][吞吐率：11.92req/s] [内存消耗：2,799.01kb] [文件加载：58]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1451',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '80b46b55-586f-4b8e-8839-3c525378aa95',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryvnJ5R5BI7TLRNziT',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370871',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'bis_id' => '1',
+  'id_no' => '210323111111111111',
+  'total_amount' => '88.88',
+  'remark' => 'remark',
+  'pro_amount' => '55.55',
+  'telephone' => '13121370872',
+  'transport_fee' => '33.33',
+  'selected_transport_type' => '1',
+  'appid' => 'wx5a32ed6c23d7cc4a',
+  'secret' => '3c6979fb79b9ffec532abefc5930d769',
+)
+[ info ] [ RUN ] app\index\controller\Order->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.002854s ]
+[ sql ] [ SQL ] INSERT INTO `store_main_orders` (`bis_id` , `telephone` , `rec_name` , `mobile` , `address` , `id_no` , `payment` , `order_no` , `total_amount` , `create_time` , `pro_total_amount` , `transport_fee` , `selected_transport_type` , `appid` , `secret` , `update_time` , `order_status` , `remark`) VALUES (1 , '13121370872' , '' , '13121370871' , '北京市海淀区' , '210323111111111111' , 1 , 'st18102113304000013041' , 88.88 , '2018-10-21 13:30:40' , 55.55 , 33.33 , 1 , 'wx5a32ed6c23d7cc4a' , '3c6979fb79b9ffec532abefc5930d769' , '2018-10-21 13:30:40' , 2 , 'remark') [ RunTime:0.017031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_shopping_carts` [ RunTime:0.009957s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:451]
+---------------------------------------------------------------
+[ 2018-10-21T13:33:25+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/makeOrder
+[ info ] app.yipeng.com/index/order/makeOrder [运行时间：0.064369s][吞吐率：15.54req/s] [内存消耗：2,714.62kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1451',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '6fad77cd-cd2c-9574-8b29-d386c4c569f9',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZX7FmmTsPd47dTE8',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370871',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'bis_id' => '1',
+  'id_no' => '210323111111111111',
+  'total_amount' => '88.88',
+  'remark' => 'remark',
+  'pro_amount' => '55.55',
+  'telephone' => '13121370872',
+  'transport_fee' => '33.33',
+  'selected_transport_type' => '1',
+  'appid' => 'wx5a32ed6c23d7cc4a',
+  'secret' => '3c6979fb79b9ffec532abefc5930d769',
+)
+[ info ] [ RUN ] app\index\controller\Order->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.002692s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.004076s ]
+[ sql ] [ SQL ] INSERT INTO `store_main_orders` (`bis_id` , `telephone` , `rec_name` , `mobile` , `address` , `id_no` , `payment` , `order_no` , `total_amount` , `create_time` , `pro_total_amount` , `transport_fee` , `selected_transport_type` , `appid` , `secret` , `update_time` , `order_status` , `remark`) VALUES (1 , '13121370872' , '' , '13121370871' , '北京市海淀区' , '210323111111111111' , 1 , 'st18102113332500016347' , 88.88 , '2018-10-21 13:33:25' , 55.55 , 33.33 , 1 , 'wx5a32ed6c23d7cc4a' , '3c6979fb79b9ffec532abefc5930d769' , '2018-10-21 13:33:25' , 2 , 'remark') [ RunTime:0.002022s ]
+---------------------------------------------------------------
+[ 2018-10-21T13:47:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/makeOrder
+[ info ] app.yipeng.com/index/order/makeOrder [运行时间：0.077046s][吞吐率：12.98req/s] [内存消耗：2,685.70kb] [文件加载：57]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '369',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'cef5160e-4ade-0936-ff01-89ffdd3e6c6e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrBWJUtLA7feCzgVt',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'telephone' => '13121370872',
+  'bis_id' => '1',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+)
+[ info ] [ RUN ] app\index\controller\Order->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.005801s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.003267s ]
+[ sql ] [ SQL ] INSERT INTO `store_main_orders` (`bis_id` , `telephone` , `rec_name` , `mobile` , `address` , `id_no` , `payment` , `order_no` , `total_amount` , `create_time` , `pro_total_amount` , `transport_fee` , `selected_transport_type` , `appid` , `secret` , `update_time` , `order_status` , `remark`) VALUES (1 , '13121370872' , '' , '' , '' , '' , 1 , 'st18102113473000019963' , 0 , '2018-10-21 13:47:30' , 0 , 0 , 0 , '' , '' , '2018-10-21 13:47:30' , 2 , '') [ RunTime:0.003746s ]
+[ error ] [2]Invalid argument supplied for foreach()[/Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/model/Order.php:197]
+---------------------------------------------------------------
+[ 2018-10-21T13:47:44+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/getOrderInfo
+[ info ] app.yipeng.com/index/order/getOrderInfo [运行时间：0.065650s][吞吐率：15.23req/s] [内存消耗：2,615.79kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'getOrderInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '369',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '1c5815aa-4261-fd31-c9fe-b647b6842bdd',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHPeMPjnhuB9HC4Cg',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'telephone' => '13121370872',
+  'bis_id' => '1',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+)
+[ info ] [ RUN ] app\index\controller\Order->getOrderInfo[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.002683s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.003285s ]
+[ sql ] [ SQL ] SELECT main.id as order_id,`main`.`order_no`,`main`.`total_amount`,`main`.`order_status`,`main`.`express_no`,`mode`.`post_code`,`mode`.`post_mode` FROM `store_main_orders` `main` LEFT JOIN `store_post_mode` `mode` ON `main`.`mode`=`mode`.`id` WHERE  (  main.bis_id = 1 and main.telephone = '13121370872' and main.status = 1  ) ORDER BY main.create_time desc [ RunTime:0.006732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_sub_orders` [ RunTime:0.007553s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 811 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.004685s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 810 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 809 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2018-10-21T13:48:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/order/getOrderInfo
+[ info ] app.yipeng.com/index/order/getOrderInfo [运行时间：0.048365s][吞吐率：20.68req/s] [内存消耗：2,615.65kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'getOrderInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '369',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '9d46ba0f-e8b8-f510-f518-2f5424c5c017',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqPpZiJzwAfOeKjcd',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'telephone' => '13121370872',
+  'bis_id' => '1',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+)
+[ info ] [ RUN ] app\index\controller\Order->getOrderInfo[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.002666s ]
+[ sql ] [ SQL ] SELECT `token`,`telephone` FROM `yp_member` WHERE  `telephone` = '13121370872'  AND `token` = '63585e803f60b4ceb4302e8d3c7b26c9' LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_main_orders` [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SELECT main.id as order_id,`main`.`order_no`,`main`.`total_amount`,`main`.`order_status`,`main`.`express_no`,`mode`.`post_code`,`mode`.`post_mode` FROM `store_main_orders` `main` LEFT JOIN `store_post_mode` `mode` ON `main`.`mode`=`mode`.`id` WHERE  (  main.bis_id = 1 and main.telephone = '13121370872' and main.status = 1  ) ORDER BY main.create_time desc [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_sub_orders` [ RunTime:0.002298s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 811 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 810 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT `pro`.`p_name`,`img`.`thumb`,`con`.`con_content1`,`con`.`con_content2`,`count`,`unit_price`,`amount` FROM `store_sub_orders` `sub` LEFT JOIN `store_pro_config` `con` ON `sub`.`pro_id`=`con`.`id` LEFT JOIN `store_products` `pro` ON `con`.`pro_id`=`pro`.`id` LEFT JOIN `store_pro_images` `img` ON `img`.`p_id`=`pro`.`id` WHERE  (  sub.main_id = 809 and sub.status = 1 ) ORDER BY sub.id asc [ RunTime:0.000650s ]

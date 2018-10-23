@@ -1,0 +1,706 @@
+---------------------------------------------------------------
+[ 2018-10-15T21:39:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/getBannersInfo?bis_id=1
+[ info ] app.yipeng.com/index/index/getBannersInfo?bis_id=1 [运行时间：0.058070s][吞吐率：17.22req/s] [内存消耗：2,590.55kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBannersInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'bis_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->getBannersInfo[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_recommend` [ RunTime:0.002590s ]
+[ sql ] [ SQL ] SELECT `bis_id`,`image`,`create_time` FROM `yp_recommend` WHERE  (  bis_id = 1 and type = 1 and status = 1 ) ORDER BY listorder desc,create_time desc LIMIT 3 [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[ 2018-10-15T21:39:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/getBannersInfo?bis_id=1
+[ info ] app.yipeng.com/index/index/getBannersInfo?bis_id=1 [运行时间：0.045080s][吞吐率：22.18req/s] [内存消耗：2,590.53kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBannersInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'bis_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->getBannersInfo[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_recommend` [ RunTime:0.003129s ]
+[ sql ] [ SQL ] SELECT `bis_id`,`image`,`create_time` FROM `yp_recommend` WHERE  (  bis_id = 1 and type = 1 and status = 1 ) ORDER BY listorder desc,create_time desc LIMIT 3 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2018-10-15T21:39:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/getBannersInfo?bis_id=1
+[ info ] app.yipeng.com/index/index/getBannersInfo?bis_id=1 [运行时间：0.045336s][吞吐率：22.06req/s] [内存消耗：2,590.34kb] [文件加载：51]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getBannersInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'postman-token' => '7c158af0-3001-5786-07ba-86180e3c86ce',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'bis_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->getBannersInfo[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_recommend` [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT `bis_id`,`image`,`create_time` FROM `yp_recommend` WHERE  (  bis_id = 1 and type = 1 and status = 1 ) ORDER BY listorder desc,create_time desc LIMIT 3 [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-10-15T22:40:38+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.069852s][吞吐率：14.32req/s] [内存消耗：2,327.26kb] [文件加载：53]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '4a1ac0b2-3362-4df2-628c-200e5d28313c',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAiHNDIshgx0oX7TK',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yp.yp_members' doesn't exist[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/connector/Mysql.php:65]
+---------------------------------------------------------------
+[ 2018-10-15T22:41:10+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.081988s][吞吐率：12.20req/s] [内存消耗：2,336.38kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'ee2747e1-d943-8514-be52-021469abdfe2',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3Vv2qjyh8sRsW5bU',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005190s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.004061s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1367 Illegal double '63585e803' value found during parsing[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-15T22:41:41+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.050247s][吞吐率：19.90req/s] [内存消耗：2,336.38kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'f2a3429f-2dfd-19be-1738-467e069ac231',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarymUzcSBBIh1qcpXkX',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001238s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003615s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1367 Illegal double '63585e803' value found during parsing[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-15T22:42:39+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.075351s][吞吐率：13.27req/s] [内存消耗：2,336.37kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '779',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '70025316-d961-dc4b-2fe8-f6f5a1896d33',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryRegMrgLiEXmPSoUn',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003164s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1367 Illegal double '63585e803' value found during parsing[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-15T22:44:35+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.054602s][吞吐率：18.31req/s] [内存消耗：2,336.34kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '779',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '0032a4e5-16a0-7dea-58ba-8e6879f523f6',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary9qeLwfYN446TByHY',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.002483s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telphone' in 'where clause'[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-15T22:45:00+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.070117s][吞吐率：14.26req/s] [内存消耗：2,194.16kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '779',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '1118f1dc-3a17-9cc8-9793-def6d4b1474e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytStFA8E80g4YiCfB',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001207s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003313s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.002777s ]
+[ sql ] [ SQL ] INSERT INTO `yp_ser_orders` (`user_name` , `mobile` , `address` , `ser_type` , `quantity` , `cleaning_agent_count` , `amount` , `remark` , `ser_time` , `create_time` , `update_time`) VALUES ('马占军' , '13121370872' , '北京市海淀区' , 1 , 3 , 2 , 130 , 'remark' , '2018-10-10 10:10:10' , '2018-10-15 22:45:00' , '2018-10-15 22:45:00') [ RunTime:0.003774s ]
+---------------------------------------------------------------
+[ 2018-10-15T22:45:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.062223s][吞吐率：16.07req/s] [内存消耗：2,361.32kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '71429ec3-7eac-8223-d910-55d50a8b54e4',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOlmf0cQFTmgcmH1s',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.004428s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.004324s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:451]
+---------------------------------------------------------------
+[ 2018-10-15T22:46:07+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.043179s][吞吐率：23.16req/s] [内存消耗：2,361.32kb] [文件加载：56]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '8f071a3e-9fea-df6b-82eb-1d941f7f5418',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryDUvPFDpMyABI41YA',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003005s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.003577s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'[/Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/library/think/db/Connection.php:451]
+---------------------------------------------------------------
+[ 2018-10-15T22:46:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.041137s][吞吐率：24.31req/s] [内存消耗：2,194.23kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '4307317e-6909-d0c3-679b-1643ecba108d',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryoAdukEhikEs1sIxs',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003023s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.004503s ]
+[ sql ] [ SQL ] INSERT INTO `yp_ser_orders` (`user_name` , `mobile` , `address` , `ser_type` , `quantity` , `cleaning_agent_count` , `amount` , `remark` , `ser_time` , `create_time` , `update_time`) VALUES ('马占军' , '13121370872' , '北京市海淀区' , 1 , 3 , 2 , 130 , 'remark' , '2018-10-10 10:10:10' , '2018-10-15 22:46:33' , '2018-10-15 22:46:33') [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[ 2018-10-15T22:46:36+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.031607s][吞吐率：31.64req/s] [内存消耗：2,194.23kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '893',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'f3d44608-6d38-73c7-2eea-9eaf0b8fe9fb',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary72Ad2uDlNSWTRRQI',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '1',
+  'quantity' => '3',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.003844s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.002813s ]
+[ sql ] [ SQL ] INSERT INTO `yp_ser_orders` (`user_name` , `mobile` , `address` , `ser_type` , `quantity` , `cleaning_agent_count` , `amount` , `remark` , `ser_time` , `create_time` , `update_time`) VALUES ('马占军' , '13121370872' , '北京市海淀区' , 1 , 3 , 2 , 130 , 'remark' , '2018-10-10 10:10:10' , '2018-10-15 22:46:36' , '2018-10-15 22:46:36') [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2018-10-15T22:51:03+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/getOrder
+[ info ] app.yipeng.com/index/serorder/getOrder [运行时间：0.040907s][吞吐率：24.45req/s] [内存消耗：2,210.98kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '140',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '47b9a9e3-6646-aeb4-8fd0-5254253e7c96',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarywYZsxPwXeB9xtJcL',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->getOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.004316s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_ser_orders` WHERE  (  id = 1 ) LIMIT 1 [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2018-10-15T22:52:49+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/getOrder
+[ info ] app.yipeng.com/index/serorder/getOrder [运行时间：0.057862s][吞吐率：17.28req/s] [内存消耗：2,211.41kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '140',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '49148ebc-f90b-b412-c42e-3f974fd2325e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynoM0TrV6AKJunQ2u',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->getOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001037s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.003738s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_ser_orders` WHERE  (  id = 1 ) LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-10-15T23:00:52+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/getOrder
+[ info ] app.yipeng.com/index/serorder/getOrder [运行时间：0.054347s][吞吐率：18.40req/s] [内存消耗：2,216.23kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '140',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '30d22181-589a-8f5e-4353-07c8e0f9934c',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryLUr3cSnc87xEe76V',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->getOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.003894s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_ser_orders` WHERE  (  id = 1 ) LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2018-10-15T23:01:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/makeOrder
+[ info ] app.yipeng.com/index/serorder/makeOrder [运行时间：0.034065s][吞吐率：29.36req/s] [内存消耗：2,200.14kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'makeOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '897',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '06da13cb-dd63-636c-d9e9-c9344ac671bf',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryX1pBMPCAPD1cBFoU',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13121370872',
+  'token' => '63585e803f60b4ceb4302e8d3c7b26c9',
+  'address' => '北京市海淀区',
+  'type' => '2',
+  'quantity' => '88.88',
+  'cleaning_agent_count' => '2',
+  'remark' => 'remark',
+  'ser_time' => '2018-10-10 10:10:10',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->makeOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_member` [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_member` WHERE  (  telephone = '13121370872' and token = '63585e803f60b4ceb4302e8d3c7b26c9' ) LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.002692s ]
+[ sql ] [ SQL ] INSERT INTO `yp_ser_orders` (`user_name` , `mobile` , `address` , `ser_type` , `quantity` , `cleaning_agent_count` , `amount` , `remark` , `ser_time` , `create_time` , `update_time`) VALUES ('马占军' , '13121370872' , '北京市海淀区' , 2 , 88.88 , 2 , 277 , 'remark' , '2018-10-10 10:10:10' , '2018-10-15 23:01:16' , '2018-10-15 23:01:16') [ RunTime:0.001424s ]
+---------------------------------------------------------------
+[ 2018-10-15T23:01:23+08:00 ] 127.0.0.1 127.0.0.1 POST /index/serorder/getOrder
+[ info ] app.yipeng.com/index/serorder/getOrder [运行时间：0.031320s][吞吐率：31.93req/s] [内存消耗：2,216.23kb] [文件加载：49]
+[ info ] [ LANG ] /Users/yangjingquan/Documents/Project/yipeng/yp_app/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'serorder',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.yipeng.com',
+  'connection' => 'keep-alive',
+  'content-length' => '140',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'e6f87bae-268d-217d-93d3-50b4d0373969',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVnAFSg8YtQvK9DkC',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\SerOrder->getOrder[ /Users/yangjingquan/Documents/Project/yipeng/yp_app/application/index/controller/Serorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:dbname=yp;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yp_ser_orders` [ RunTime:0.002518s ]
+[ sql ] [ SQL ] SELECT * FROM `yp_ser_orders` WHERE  (  id = 4 ) LIMIT 1 [ RunTime:0.000358s ]
