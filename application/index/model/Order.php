@@ -9,21 +9,20 @@ class Order extends Model{
     public function getOrderInfo($param){
         //获取参数
         $telephone = !empty($param['telephone']) ? $param['telephone'] : '';
-        $token = !empty($param['token']) ? $param['token'] : '';
         $bis_id = !empty($param['bis_id']) ? $param['bis_id'] : '';
         $type = !empty($param['type']) ? $param['type'] : 1;
         $where = "main.bis_id = ".$bis_id." and main.telephone = '$telephone' and main.status = 1 ";
 
         if($type == 2){
-            $con = "and main.order_status = 1";
-        }elseif($type == 3){
             $con = "and main.order_status = 2";
-        }elseif($type == 4){
+        }elseif($type == 3){
             $con = "and main.order_status = 3";
-        }elseif($type == 5){
+        }elseif($type == 4){
             $con = "and main.order_status = 4";
-        }elseif($type == 6){
+        }elseif($type == 5){
             $con = "and main.order_status = 5";
+        }elseif($type == -1){
+            $con = "and main.order_status = -1";
         }else{
             $con = "";
         }
@@ -61,6 +60,9 @@ class Order extends Model{
                 case 4:
                     $status_text =  '待收货';
                     break;
+                case -1:
+                    $status_text =  '已取消';
+                    break;
                 default:
                     $status_text =  '已完成';
                     break;
@@ -87,6 +89,14 @@ class Order extends Model{
             ->where($where)
             ->find();
 
+        if(!$res){
+            echo json_encode(array(
+                'statuscode'  => 0,
+                'message'     => '订单获取失败'
+            ));
+            exit;
+        }
+
         switch($res['order_status']){
             case 2:
                 $status_text =  '待付款';
@@ -96,6 +106,9 @@ class Order extends Model{
                 break;
             case 4:
                 $status_text =  '待收货';
+                break;
+            case -1:
+                $status_text =  '已取消';
                 break;
             default:
                 $status_text =  '已完成';
@@ -240,10 +253,6 @@ class Order extends Model{
         return $order_no;
     }
 
-
-
-
-
     //获取订单副表信息(普通商城版)
     public function getSubOrderInfo($main_id){
         $where = "sub.main_id = $main_id and sub.status = 1";
@@ -257,7 +266,6 @@ class Order extends Model{
 
         return $res;
     }
-
 
     //设置主订单表推荐人及佣金信息(普通商城版)
     public function setMainRecInfo($order_id,$rec_id){

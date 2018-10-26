@@ -5,7 +5,6 @@
  * Date: 2018/8/28
  * Time: 9:35
  */
-
 namespace app\index\controller;
 
 use think\Controller;
@@ -79,12 +78,11 @@ class Apppay extends Controller
             //商户号
             $data['mch_id'] = $WxPayConfig::MCHID;
             //商品描述
-            $data['body'] = '保洁项目';
+            $data['body'] = '一盆社区商城支付';
             //ip地址
 //            $data['spbill_create_ip'] = '116.255.206.241';
             //金额
-//            $total_fee = $tab['amount'];
-            $total_fee = 0.01;
+            $total_fee = $tab['total_amount'];
             $data['total_fee'] = $total_fee * 100;
             //商户订单号,不能重复
             $data['out_trade_no'] = $order_no;

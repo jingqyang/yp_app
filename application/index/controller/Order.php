@@ -159,9 +159,9 @@ class Order extends Controller{
 
     public function confirmOrder(){
         $this->userInfo();
-        $order_id = input('post.order_id');
+        $order_no = input('post.order_no');
         $data['order_status'] = 5;
-        $res = Db::table('store_main_orders')->where('id = '.$order_id)->update($data);
+        $res = Db::table('store_main_orders')->where("order_no = '$order_no'")->update($data);
         if ($res)
         {
             echo json_encode(array(
