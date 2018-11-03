@@ -145,7 +145,6 @@ class Order extends Model{
         //获取参数
         $bis_id = !empty($param['bis_id']) ? $param['bis_id'] : '';
         $telephone = !empty($param['telephone']) ? $param['telephone'] : '';
-        $token = !empty($param['token']) ? $param['token'] : '';
         $mobile = !empty($param['mobile']) ? $param['mobile'] : '';
         $rec_name = !empty($param['rec_name']) ? $param['rec_name'] : '';
         $address = !empty($param['address']) ? $param['address'] : '';
